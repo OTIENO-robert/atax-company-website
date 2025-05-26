@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atax Company Ltd - Seamless Connectivity & Enhanced Security Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* General body styling */
+        body {
+            background-color: #f3f4f6; /* Light gray background */
+            scroll-behavior: smooth; /* Smooth scrolling for navigation */
+        }
+
+        /* Hero Section Background - A gradient for a modern look */
+        .hero-bg {
+            background: linear-gradient(to right, #fdfdfe, #ffffff); /* Navy blue to brighter blue */
+            /* You can also use a background image with overlay here if desired */
+            /* background-image: url('images/hero-bg.jpg'); */
+            /* background-size: cover; */
+            /* background-position: center; */
+        }
+
+        /* Card hover effects for services and testimonials */
+        .card-hover:hover {
+            transform: translateY(-5px); /* Lifts the card slightly */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds a stronger shadow */
+        }
+
+        /* Custom styling for the dropdown arrow within the contact form */
+        /* This hides the default arrow and can be replaced with a custom one */
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='currentColor'%3E%3Cpath d='M7 7l3-3 3 3m0 6l-3 3-3-3'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.7em top 50%, 0 0;
+            background-size: 0.65em auto, 100%;
+            padding-right: 2.5em; /* Space for the custom arrow */
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="images/logo1.png.jpg" alt="Atax Company Ltd Logo" class="h-12 object-contain">
+                <h2 class="text-blue-700 text-lg md:text-xl font-semibold italic">Connectivity & Security</h2>
+                
+            </div>
+            <nav class="space-x-6 hidden md:flex"> <a href="#home" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="#services" class="text-gray-700 hover:text-blue-600 transition duration-300">Services</a>
+                <a href="#why-choose-us" class="text-gray-700 hover:text-blue-600 transition duration-300">Why Choose Us</a>
+                <a href="#about-us" class="text-gray-700 hover:text-blue-600 transition duration-300">About Us</a>
+                <a href="#packages" class="text-gray-700 hover:text-blue-600 transition duration-300">Packages</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition duration-300">Clients Say</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact Us</a>
+                
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2">
+            <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="#services" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Services</a>
+            <a href="#why-choose-us" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Why Choose Us</a>
+            <a href="#about-us" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="#packages" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Packages</a>
+            <a href="#testimonials" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Clients Say</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact Us</a>
+            
+        </nav>
+    </header>
+
+    <section id="home" class="hero-bg text-white py-20 relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center z-10 relative">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 p-4">
+                <img src="images/logo1.jpg" alt="Artax Logo" class="h-24 md:h-32 mx-auto mb-4">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 pt-24 md:pt-32">Atax Company Ltd</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto"><i>Your trusted partner for seamless connectivity, robust security, and professional installations.</i></p>
+            <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="bg-orange-500 text-white text-xl px-8 py-4 rounded-full hover:bg-orange-600 transition duration-300 shadow-lg font-bold">Apply Now </a>
+        </div>
+        </section>
+
+    <section id="services" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">Our Core Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md transition transform text-center">
+                    <img src="images/wifi-service.jpg" alt="Fiber Network Installation" class="w-full h-48 object-cover rounded-md mb-6">
+                    <i class="fas fa-network-wired text-5xl text-blue-600 mb-4"></i> <h3 class="text-2xl font-semibold mb-2 text-blue-700">Fiber Network Solutions</h3>
+                    <p class="text-gray-700">Experience lightning-fast and reliable internet connectivity with our cutting-edge fiber optic installations for homes and businesses. Enjoy seamless Browse, streaming, and online gaming.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md transition transform text-center">
+                    <img src="images/cctv-service.jpg" alt="CCTV Camera Installation" class="w-full h-48 object-cover rounded-md mb-6">
+                    <i class="fas fa-video text-5xl text-blue-600 mb-4"></i> <h3 class="text-2xl font-semibold mb-2 text-blue-700">CCTV & Surveillance Systems</h3>
+                    <p class="text-gray-700">Enhance your security with our state-of-the-art CCTV installations. We offer advanced surveillance solutions with real-time monitoring and high-definition footage for peace of mind.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md transition transform text-center">
+                    <img src="images/tv-mounting-service.jpg" alt="TV Mounting Service" class="w-full h-48 object-cover rounded-md mb-6">
+                    <i class="fas fa-tv text-5xl text-blue-600 mb-4"></i> <h3 class="text-2xl font-semibold mb-2 text-blue-700">Professional TV Mounting</h3>
+                    <p class="text-gray-700">Achieve the perfect viewing experience with our expert TV mounting services. We ensure secure, aesthetically pleasing installations tailored to your space and preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">Why Choose Atax?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow-sm card-hover">
+                    <i class="fas fa-shield-alt text-5xl text-orange-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">Security First Approach</h3>
+                    <p class="text-gray-700">We prioritize the highest security standards in all our solutions to protect your digital assets and physical spaces.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-sm card-hover">
+                    <i class="fas fa-headset text-5xl text-orange-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">Prompt & Reliable Support</h3>
+                    <p class="text-gray-700">Our dedicated support team is available 24/7 to address your concerns and ensure continuous service.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-sm card-hover">
+                    <i class="fas fa-users-cog text-5xl text-orange-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">Certified Expert Team</h3>
+                    <p class="text-gray-700">Benefit from the expertise of our certified professionals with extensive experience in networking and security.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-sm card-hover">
+                    <i class="fas fa-cogs text-5xl text-orange-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">Tailored Custom Solutions</h3>
+                    <p class="text-gray-700">We design and implement bespoke systems perfectly aligned with your unique residential or business needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">About Atax Company Ltd</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="images/office.jpg" alt="Atax Office" class="rounded-lg shadow-lg w-full h-auto object-cover max-h-96">
+                </div>
+                <div class="md:w-1/2 text-gray-700">
+                    <p class="mb-4 text-lg">Atax Company Ltd is a leading provider of comprehensive networking and security solutions across Kenya. Established with a vision to deliver reliable, high-speed connectivity and cutting-edge surveillance, we cater to both residential and commercial clients.</p>
+                    <p class="mb-4 text-lg">Our commitment to excellence is reflected in our robust fiber network installations, advanced CCTV systems, and meticulous TV mounting services. We pride ourselves on our expert team, swift response times, and a client-centric approach that ensures tailored solutions for every unique requirement.</p>
+                    <p class="mb-4 text-lg font-semibold text-blue-800">Our Branches:</p>
+                    <ul class="list-disc list-inside space-y-1 ml-4 text-lg">
+                        <li>Nairobi City,Nairobi County</li>
+                        <li>Maseno Town, Kisumu County</li>
+                        <li>Mbale, Vihiga County</li>
+                        <li>Kakamega Town,Kakamega County</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">Our Home Wi-Fi Packages</h2>
+            <div id="packages-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md text-center border-2 border-blue-200">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-2">Basic Fiber</h3>
+                    <p class="text-gray-600 text-sm mb-4">Perfect for casual users</p>
+                    <p class="text-4xl font-extrabold text-blue-900 mb-4">Ksh 2,500<span class="text-xl font-normal text-gray-600">/month</span></p>
+                    <ul class="text-gray-700 text-left mx-auto max-w-xs space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Up to 10 Mbps</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Standard Usage</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>1-3 Devices</li>
+                        <li class="flex items-center"><i class="fas fa-times-circle text-red-500 mr-2"></i>No Priority Support</li>
+                    </ul>
+                    <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300 font-bold">Select Plan</a>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md text-center border-2 border-blue-500 relative">
+                    <span class="absolute top-0 right-0 bg-orange-500 text-white text-xs px-3 py-1 rounded-bl-lg font-bold">POPULAR</span>
+                    <h3 class="text-2xl font-bold text-blue-700 mb-2">Standard Fiber</h3>
+                    <p class="text-gray-600 text-sm mb-4">Ideal for families & streaming</p>
+                    <p class="text-4xl font-extrabold text-blue-900 mb-4">Ksh 4,000<span class="text-xl font-normal text-gray-600">/month</span></p>
+                    <ul class="text-gray-700 text-left mx-auto max-w-xs space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Up to 30 Mbps</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Moderate Usage</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>4-8 Devices</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Standard Support</li>
+                    </ul>
+                    <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300 font-bold">Select Plan</a>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md text-center border-2 border-blue-500 relative">
+                    <span class="absolute top-0 right-0 bg-orange-500 text-white text-xs px-3 py-1 rounded-bl-lg font-bold">POPULAR</span>
+                    <h3 class="text-2xl font-bold text-blue-700 mb-2">Standard Fiber</h3>
+                    <p class="text-gray-600 text-sm mb-4">Ideal for families & streaming</p>
+                    <p class="text-4xl font-extrabold text-blue-900 mb-4">Ksh 4,000<span class="text-xl font-normal text-gray-600">/month</span></p>
+                    <ul class="text-gray-700 text-left mx-auto max-w-xs space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Up to 30 Mbps</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Moderate Usage</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>4-8 Devices</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Standard Support</li>
+                    </ul>
+                    <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300 font-bold">Select Plan</a>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md text-center border-2 border-blue-500 relative">
+                    <span class="absolute top-0 right-0 bg-orange-500 text-white text-xs px-3 py-1 rounded-bl-lg font-bold">POPULAR</span>
+                    <h3 class="text-2xl font-bold text-blue-700 mb-2">Standard Fiber</h3>
+                    <p class="text-gray-600 text-sm mb-4">Ideal for families & streaming</p>
+                    <p class="text-4xl font-extrabold text-blue-900 mb-4">Ksh 4,000<span class="text-xl font-normal text-gray-600">/month</span></p>
+                    <ul class="text-gray-700 text-left mx-auto max-w-xs space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Up to 30 Mbps</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Moderate Usage</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>4-8 Devices</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Standard Support</li>
+                    </ul>
+                    <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300 font-bold">Select Plan</a>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md text-center border-2 border-blue-500 relative">
+                    <span class="absolute top-0 right-0 bg-orange-500 text-white text-xs px-3 py-1 rounded-bl-lg font-bold">POPULAR</span>
+                    <h3 class="text-2xl font-bold text-blue-700 mb-2">Standard Fiber</h3>
+                    <p class="text-gray-600 text-sm mb-4">Ideal for families & streaming</p>
+                    <p class="text-4xl font-extrabold text-blue-900 mb-4">Ksh 4,000<span class="text-xl font-normal text-gray-600">/month</span></p>
+                    <ul class="text-gray-700 text-left mx-auto max-w-xs space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Up to 30 Mbps</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Moderate Usage</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>4-8 Devices</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Standard Support</li>
+                    </ul>
+                    <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300 font-bold">Select Plan</a>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md text-center border-2 border-blue-200">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-2">Premium Fiber</h3>
+                    <p class="text-gray-600 text-sm mb-4">Best for heavy users & gaming</p>
+                    <p class="text-4xl font-extrabold text-blue-900 mb-4">Ksh 7,500<span class="text-xl font-normal text-gray-600">/month</span></p>
+                    <ul class="text-gray-700 text-left mx-auto max-w-xs space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Up to 100 Mbps</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Heavy Usage</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Unlimited Devices</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Priority 24/7 Support</li>
+                    </ul>
+                    <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300 font-bold">Select Plan</a>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="testimonials" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">What Our Clients Say</h2>
+            <div id="testimonials-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="images/client1.jpg" alt="Client Sarah M." class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                    <p class="italic text-gray-700 mb-4">"Atax transformed our home internet! Blazing fast speeds and incredibly reliable. Their team was professional and efficient. Highly recommend their fiber services."</p>
+                    <div class="text-yellow-400 mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="font-semibold text-blue-700">- Sarah M., Nairobi</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="images/client2.jpg" alt="Client James K." class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                    <p class="italic text-gray-700 mb-4">"The CCTV installation by Atax gave us so much peace of mind. The quality is superb, and the remote monitoring works flawlessly. A truly professional service!"</p>
+                    <div class="text-yellow-400 mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="font-semibold text-blue-700">- James K., Kakamega</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="images/client1.jpg" alt="Client Emily W." class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                    <p class="italic text-gray-700 mb-4">"Needed a TV mounted quickly and securely. Atax delivered beyond expectations! Clean work and friendly technicians. My living room looks fantastic now."</p>
+                    <div class="text-yellow-400 mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="font-semibold text-blue-700">- Emily W., Maseno</p>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">Get in Touch with Atax</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 bg-white p-8 rounded-lg shadow-md">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-700">Reach Out to Our Team</h3>
+                    <div class="space-y-4 text-gray-700 text-lg">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-600 mr-3 mt-1"></i>
+                            <div>
+                                <p>Head Office: XHRX+GH Maseno, Maseno Town Kisumu County</p>
+                                <p>Branches: Nairobi City, Mbale Vihiga County, Kakamega Town</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-600 mr-3"></i>
+                            <p>+254 796-3325-61 (Main Line)</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-blue-600 mr-3"></i>
+                            <p>info@artaxnetworks.com</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-blue-600 mr-3"></i>
+                            <p>Mon-Fri: 8 AM - 5 PM</p>
+                            <p>Sat: 9 AM - 1 PM</p>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-700">Follow Us</h3>
+                        <div class="flex space-x-5">
+                            <a href="https://www.facebook.com/artaxnetworks" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300"><i class="fab fa-facebook-f text-3xl"></i></a>
+                            <a href="https://www.tiktok.com/@artaxnetworks" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300"><i class="fab fa-tiktok text-3xl"></i></a>
+                            <a href="https://www.instagram.com/artaxnetworks" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300"><i class="fab fa-instagram text-3xl"></i></a>
+                            <a href="https://wa.me/2541234567" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300"><i class="fab fa-whatsapp text-3xl"></i></a>
+                            <a href="https://twitter.com/artaxnetworks" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300"><i class="fab fa-x-twitter text-3xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-700">Send Us an Inquiry</h3>
+                    <form id="inquiryForm" class="space-y-5">
+                        <div>
+                            <label for="name" class="block text-base font-medium text-gray-700 mb-1">Your Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-base font-medium text-gray-700 mb-1">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="john.doe@example.com" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-base font-medium text-gray-700 mb-1">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="+254 7XX XXX XXX">
+                        </div>
+                        <div>
+                            <label for="inquiry" class="block text-base font-medium text-gray-700 mb-1">Type of Inquiry</label>
+                            <select id="inquiry" name="inquiry_type" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <option value="" disabled selected>Select an inquiry type</option>
+                                <option value="fiber-installation">Fiber Network Installation</option>
+                                <option value="cctv-installation">CCTV System Inquiry</option>
+                                <option value="tv-mounting">TV Mounting Service</option>
+                                <option value="home-wifi-package">Home Wi-Fi Packages</option>
+                                <option value="incident-reporting">Incident Reporting / Support</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-base font-medium text-gray-700 mb-1">Your Message</label>
+                            <textarea id="message" name="message" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" rows="6" placeholder="Tell us more about your needs..." required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300 font-bold w-full md:w-auto">Submit Inquiry</button>
+                        <div id="form-status" class="mt-4 text-center text-sm font-medium"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1">
+                <img src="images/logo.png" alt="Artax Logo" class="h-10 mb-4 filter brightness-0 invert"> <p class="text-gray-400 text-sm">Artax Company Ltd is dedicated to providing cutting-edge networking and security solutions that empower homes and businesses.</p>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-blue-300">Services</h4>
+                <ul class="space-y-2">
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Fiber Networks</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">CCTV Installation</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">TV Mounting</a></li>
+                    <li><a href="#packages" class="text-gray-400 hover:text-white transition duration-300">Home Wi-Fi Packages</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-blue-300">Company</h4>
+                <ul class="space-y-2">
+                    <li><a href="#about-us" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                    <li><a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="text-gray-400 hover:text-white transition duration-300">Careers (Apply Now)</a></li>
+                    <li><a href="#why-choose-us" class="text-gray-400 hover:text-white transition duration-300">Why Artax</a></li>
+                    <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Client Testimonials</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-semibold mb-4 text-blue-300">Support</h4>
+                <ul class="space-y-2">
+                    <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a></li>
+                    <li><a href="URL_TO_FAQ_PAGE" target="_blank" class="text-gray-400 hover:text-white transition duration-300">FAQs</a></li>
+                    <li><a href="URL_TO_TERMS_PAGE" target="_blank" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a></li>
+                    <li><a href="URL_TO_PRIVACY_PAGE" target="_blank" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-8 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Artax Company Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu visibility
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        // Handles internal anchors and external links (like Portal or Apply Now)
+        document.querySelectorAll('a[href^="#"], .header-nav a[target="_blank"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+
+                // If it's an external link or portal, let the browser handle it (open in new tab)
+                if (this.target === '_blank' || href.startsWith('http') || href.startsWith('https')) {
+                    // Do nothing, let default browser behavior for target="_blank" or external links
+                } else if (href.startsWith('#')) {
+                    // It's an internal anchor link, prevent default and smooth scroll
+                    e.preventDefault();
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                        // Close mobile menu after clicking a link
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                }
+            });
+        });
+
+        // Contact Form Submission (Frontend-only validation and message)
+        // IMPORTANT: For a truly dynamic site, this form would send data to a backend API.
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            const formStatus = document.getElementById('form-status');
+            formStatus.textContent = ''; // Clear previous messages
+            formStatus.classList.remove('text-green-600', 'text-red-600');
+
+            // Simulate form submission success/failure
+            const isSuccess = Math.random() > 0.1; // 90% chance of success for demo
+
+            if (isSuccess) {
+                formStatus.textContent = 'Thank you for your inquiry! We will get back to you within 24 hours.';
+                formStatus.classList.add('text-green-600');
+                this.reset(); // Clear form fields on success
+            } else {
+                formStatus.textContent = 'There was an error submitting your inquiry. Please try again later.';
+                formStatus.classList.add('text-red-600');
+            }
+
+            // In a real application, you'd use fetch API here:
+            /*
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                inquiryType: document.getElementById('inquiry').value,
+                message: document.getElementById('message').value,
+            };
+
+            fetch('/api/submit-inquiry', { // Replace with your backend endpoint
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.status === 'success') {
+                    formStatus.textContent = 'Thank you for your inquiry! We will get back to you within 24 hours.';
+                    formStatus.classList.add('text-green-600');
+                    this.reset();
+                } else {
+                    formStatus.textContent = 'Error: ' + (data.message || 'Unknown error.');
+                    formStatus.classList.add('text-red-600');
+                }
+            })
+            .catch(error => {
+                console.error('Submission error:', error);
+                formStatus.textContent = 'There was an issue sending your inquiry. Please try again later.';
+                formStatus.classList.add('text-red-600');
+            });
+            */
+        });
+
+        // Optional: Hide mobile menu when clicking outside (simple version)
+        // document.addEventListener('click', (event) => {
+        //     if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
+        //         mobileMenu.classList.add('hidden');
+        //     }
+        // });
+    </script>
+</body>
+</html>
